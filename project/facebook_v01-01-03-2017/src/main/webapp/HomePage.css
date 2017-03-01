@@ -1,0 +1,270 @@
+header {
+    background-color: #3b5998;
+  }
+body{
+    background-color: #d8dfea;
+}
+.btn-secondary:hover, .btn-primary:active, .btn-primary:focus{
+	color:white;
+    background-color:#2E4576;
+    border-color:#2E4576;
+    box-shadow: none;
+  }
+
+.btn-primary{
+    background-color:#3b5998;
+    border-color:#3b5998;
+    padding-top:3px !important;
+    padding-bottom:3px !important;
+  }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color:#2E4576;
+    border-color:#2E4576;
+    box-shadow: none;
+  }
+ .btn-friends-primary{
+    background-color:#ffffff;
+    border-color:grey;
+    padding-top:3px !important;
+    padding-bottom:3px !important;
+  }
+   a{
+    color: #3b5998;
+}
+p, a span {
+    color: #000;
+}
+/*
+*
+*
+Following Style is included for navigation bar on the top. It's Color and hover events are maintained by this.
+*
+*
+*/
+.navbar-nav > li > a {
+    padding-top:12px !important;
+    padding-bottom:12px !important;}
+.navbar {
+    min-height:46px !important
+ }
+/* navbar */
+.navbar-default {
+    background-color: #3b5998;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: #365899;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #365899;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #365899;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #365899;
+    border-bottom-color: #365899;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #365899;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/* Styles for navigation bar ends here.*/
+
+/*Style for Left Pane Buttons*/
+.box {
+  width: 180px;
+  height: 30px;
+  margin-bottom: 0px;
+  padding-top:5px;
+  background: #d8dfea;
+  border-radius:3px;
+    }
+.box:hover{
+  background: #f6f7f9;
+  cursor: pointer;
+    }
+/*Style for Left Pane Buttons*/
+
+
+/* chat pop up */
+@media only screen and (max-width : 540px)
+            {
+                .chat-sidebar
+                {
+                    display: none !important;
+                }
+               
+                .chat-popup
+                {
+                    display: none !important;
+                }
+            }
+           
+            body
+            {
+                background-color: #e9eaed;
+            }
+           
+            .chat-sidebar
+            {
+                width: 200px;
+                position: fixed;
+                height: 100%;
+                right: 0px;
+                top: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border: 1px solid rgba(29, 49, 91, .3);
+            }
+           
+            .sidebar-name
+            {
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+           
+            .sidebar-name span
+            {
+                padding-left: 5px;
+            }
+           
+            .sidebar-name a
+            {
+                display: block;
+                height: 100%;
+                text-decoration: none;
+                color: inherit;
+            }
+           
+            .sidebar-name:hover
+            {
+                background-color:#e1e2e5;
+            }
+           
+            .sidebar-name img
+            {
+                width: 32px;
+                height: 32px;
+                vertical-align:middle;
+            }
+           
+            .popup-box
+            {
+                display: none;
+                position: fixed;
+                bottom: 0px;
+                right: 220px;
+                height: 285px;
+                background-color: rgb(237, 239, 244);
+                width: 300px;
+                border: 1px solid rgba(29, 49, 91, .3);
+            }
+           
+            .popup-box .popup-head
+            {
+                background-color: #6d84b4;
+                padding: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                clear: both;
+            }
+           
+            .popup-box .popup-head .popup-head-left
+            {
+                float: left;
+            }
+           
+            .popup-box .popup-head .popup-head-right
+            {
+                float: right;
+                opacity: 0.5;
+            }
+           
+            .popup-box .popup-head .popup-head-right a
+            {
+                text-decoration: none;
+                color: inherit;
+            }
+           
+            .popup-box .popup-messages
+            {
+                height: 100%;
+                overflow-y: scroll;
+            }
+           
+
+/*Style for News Feed (Posts)*/
+h4{
+  font-weight: bold;
+  color: #3b5998;
+  font-size: 18px;
+  margin-top:-5px;
+}
+.panel-default > .panel-heading{
+  background-color:white;
+  border-color:white;
+}
+a, a:hover{
+  color:grey;
+}
+
+h5{
+  color: grey;
+  font-size: 12px;
+  margin-top:-5px;
+}
+/*Style for News Feed (Posts) Ends Here*/
+
+
+

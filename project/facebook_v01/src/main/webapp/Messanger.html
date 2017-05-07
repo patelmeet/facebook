@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- line no 306 to 317 are changed on 14 march by shachi -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    
+    <title>Messanger</title>
+    
+    
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css">
+	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+	<script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+   	<link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+  	<script src="JavaScriptFiles/MessangerScript.js"></script>
+  	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+  	
+  	<!-- For Hover -->
+
+  	
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+
+
+  <div id="topNavigationBar"></div>
+
+<!--Code For Left Panel Starts From Here-->
+	<div class="container-fluid">
+		<div class="row">
+			<div style="padding-top :66px; top:0px; position:fixed" class="col-md-12">
+				<div class="col-md-3 col-md-offset-1">
+					<div id="friend_list_in_messanger"></div>
+				</div>
+				
+				<div class="col-md-4" >
+				 <div id="receivername"></div>
+					<div style="height:400px; overflow-y: scroll;  background-color:white;" id="messageData" >
+					</div>
+					
+					<div style="margin-top:20px;">
+						<textarea id="messageBox" class="col-md-9" placeholder="Enter your text"></textarea>
+						<button class="col-md-2 btn btn-primary" style="margin-top:7px;margin-left:10px;" onclick="sendMessage();"> Send</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

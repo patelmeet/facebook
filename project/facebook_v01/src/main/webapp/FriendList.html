@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Friend List</title>
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" href="RequiredOfflineFiles/bootstrap.min.css">
+    <script src="RequiredOfflineFiles/jquery.min.js"></script>
+    <script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+  	<script src="JavaScriptFiles/FriendListScript.js"></script>
+  	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+ 
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+  
+  <div id="topNavigationBar"></div>
+             
+<div class="container-fluid" style="padding-top :75px; margin-left: 50px;">
+<div class="panel panel-default" style="padding-top :5px;width:800px; margin-left: 50px;position:relative">
+		<div class="panel-heading" style="padding-top :15px;position:relative"><h3><span class="glyphicon glyphicon-user" style="margin-right: 8px; color:#3b5998;"></span><b>Friends</b></h3></div>
+		<div class="panel-body">
+<div class="col-md-12">
+ <div class="col-md-6">
+                      
+                        <div style="padding-top :15px;width:350px;height:150px; margin-left: 0px;position:relative">
+
+                          <ul class="list-group" id="row1">
+              		  </ul>
+          		</div> 
+       		    </div>  
+       		    <div class="col-md-6">
+           		 <div style="padding-top :15px;width:350px; height:150px; margin-left: 10px;position:relative">
+
+           		   <ul class="list-group" id="row2">
+            		   </ul>              
+                            
+                         </div>
+                    </div>       
+</div>
+</div> </div>
+</div>   
+   <!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+ <!-- End of chatbox for friend list -->
+
+</body>
+
+</html>

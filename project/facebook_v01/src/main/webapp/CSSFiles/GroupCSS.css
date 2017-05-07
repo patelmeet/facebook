@@ -1,0 +1,57 @@
+.nitishaffix {
+  top: 10px;
+  width:40%;
+}
+
+.panel-body > img {
+  width: 20%;
+  height: 20%;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: white;
+    color: black;
+
+}
+
+.jumbotron {
+    height: 350px;
+    background-image:url('/facebook_v01/images/scene.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*** Added by Deepak*/
+/* 28 th FEB */
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+text-decoration: none;
+font-weight: bold;
+color:white;
+border-radius:0px;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #3b5998;
+color: black !important;
+background-color: transparent !important;
+}
+.nav-pills > li > a{
+    border-radius:0px;
+}
+.
+
+.floatleft {
+    float:left;
+}
+.floatright {
+    float:right;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}

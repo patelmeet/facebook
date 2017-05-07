@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Events</title>
+    <script src="RequiredOfflineFiles/jquery.js"></script> 
+ 	<link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css"> 	
+ 	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+ 	<script src="RequiredOfflineFiles/jquery-1.9.1.js"></script>
+    <script src="RequiredOfflineFiles/bootstrap.min.js"></script>    
+    
+    
+    <link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css">     
+     <link rel="stylesheet" href="CSSFiles/HomePage.css" />
+    
+    <link rel="stylesheet" href="RequiredOfflineFiles/jquery-ui.css" />
+    
+    
+    <script src="RequiredOfflineFiles/jquery-ui.js"></script>  
+   
+    
+     
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+    <script src="JavaScriptFiles/EventScript.js"></script>
+    <script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+    
+  <div id="topNavigationBar"></div>
+
+<!--Code For Left Panel Starts From Here-->
+  <div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-2 col-md-offset-1">
+       	<div style="padding-top :68px; width:180px; top:0px; position:fixed" >
+
+ 		<div class="box" id="news" style="margin-top: 1px; margin-bottom:9px" >
+        		<div>
+	              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;">
+	              	<img id="ViewPersonalInfoUserProPic" src="UserProfilePictures/default.jpg" class="img-rounded" width="20px" height="20px">
+	              </span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2" id="ViewPersonalInfoUserFullNameFontTag">Default</font>
+        		</div>
+    			</div>
+
+
+			<div><font size="1" color="gray"><b>
+			&nbsp;MY EVENTS</b></font>
+			</div> 
+
+	<!-- 
+    			<div class="box" id="news" style="margin-top: -3px; width:150px; height:30px;" onclick="window.location='MiscellaneousPages/ScopeForTest2.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1px;"><img src="icons/Calendar.jpg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Upcoming</font>
+            </div>
+          </div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px;" onclick="window.location='MiscellaneousPages/ScopeForTest2.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/calendar1.jpeg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Calendar</font>
+        		</div>
+    			</div>
+
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px; "  onclick="window.location='MiscellaneousPages/ScopeForTest2.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/discover.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Discover</font>
+        		</div>
+    			</div>
+
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px;" onclick="window.location='MiscellaneousPages/ScopeForTest2.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/clock.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Past</font>
+        		</div>
+    			</div>
+                      --->
+
+			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px;" >
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/create.jpeg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2"><a href="#event_form" data-toggle="modal">Create</a></font>
+        		</div>
+    			</div>
+
+    </div>
+    </div>
+<!-- Left Panel Ends here-->
+
+
+
+
+
+   <!-- Second Main Column -->
+<div class="col-md-4">
+  <div class="row">
+        
+	 <div style="padding-top :68px;width:450px; margin-left: -25px;position:absolute">
+            	
+
+      <div class="container,panel panel-default" style="height:300px; background-color:white">
+  		  <ul class="nav nav-tabs">
+  		    <li class="active"><a data-toggle="tab" href="#menu1">All</a></li>
+  		    <li><a data-toggle="tab" href="#menu2">Invite</a></li>
+  		    <li><a data-toggle="tab" href="#menu3">Hosting</a></li>
+  		    <a class="btn btn-primary" href="#event_form" id="create_event" data-toggle="modal" style="color:white; margin-left:110px;margin-top: 6px; height:25px; width:120px;">
+         <b style="font-size:11px"></b>
+  		    <b>Create Event</b>
+          <span class="caret" style="color:white;margin-left:5px"></span>
+         
+          </a>
+  		  </ul>
+                    
+                    
+        <div class="tab-content">
+			    <div id="menu1" class="tab-pane fade in active">
+			    	<form class="form-horizontal" role="form">
+              <div class="form-group" style="padding:14px; margin-top:20px;">
+                <center><img src="icons/event_graff.png"/></center>
+                <br/>
+  							<br/>
+                <div class="col-md-10 col-md-offset-1 text-left" >
+                  <div class="row" >                     
+
+                    <span class="media-middle pull-left" style="margin-left:50px"><font size="2" color="grey" face="arial">No events coming up. Why not <a href="">host your own?</a></font></span>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+			    <div id="menu2" class="tab-pane fade">
+			     	<!-- <form class="form-horizontal" role="form">
+		              <div class="form-group" style="padding:14px; margin-top:20px;">
+		                <center><img src="icons/invites.png"/></center>
+		                <br/>
+									  <br/>
+		                <div class="col-md-10 col-md-offset-1 text-left" >
+		                  <div class="row" >                     
+					
+		                          <span class="media-middle pull-left" style="margin-left:120px"><font size="3" color="grey" face="arial">You're all caught up.</font></span>
+		
+		                  </div>
+		                </div>
+		              </div>
+	         		 </form> -->
+	         		  
+	         		  	
+                 		  <ul class="list-group" id="eventInvite" style="margin-top:10px; margin-left:10px; margin-right:10px;" ></ul>
+              		
+          </div>       
+                  
+			      
+			    
+			    
+			    <div id="menu3" class="tab-pane fade">
+			      <form class="form-horizontal" role="form">
+              <div class="form-group" style="padding:14px; margin-top:20px;">
+                <center><img src="icons/host.png"/></center>
+                <br/>
+							  <br/>
+                <div class="col-md-10 col-md-offset-1 text-left" >
+                  <div class="row" >                     
+                    <span class="media-middle pull-left" style="margin-left:70px"><font size="3" color="grey" face="arial">Have friends over or plan a night out.</font></span>
+                  </div>
+                </div>
+              </div>
+            </form>
+			    </div>
+
+			 </div>
+		  
+      </div>
+    
+			
+			
+            <div class="panel panel-default" style="margin-top:10px;">
+            <div id="topNavigationBar"></div>
+            <div class="panel-heading" style="height:35px;">
+                <div ><b>Currently running Events </b></div> 
+                </div>
+                <div class="panel-body">
+                   <ul class="list-group" id="my_events" style="padding-top :0px;width:400px; margin-left:10px ; margin-top: 10px;position:relative"></ul>
+               </div>
+            </div>
+			
+
+
+
+            <div class="panel panel-default">
+            <div id="topNavigationBar"></div>
+                 <div class="panel-heading" style="height:35px;">
+                <div ><b>Past Events </b></div> 
+                </div>
+                <div class="panel-body">
+                   <ul class="list-group" id="past_events" style="padding-top :0px;width:400px; margin-left:10px ; margin-top: 10px;position:relative"></ul>
+                    
+                </div> </div>
+            </div>
+    </div>
+  </div>
+</div>
+
+
+        
+
+<div id="event_form" class="modal fade">
+  <div class="modal-dialog">
+  <form class="form"  id="eventform" method=post  onsubmit="addEventPhoto()" enctype="multipart/form-data" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Create Event</h4>
+      </div>
+      <div class="modal-body" style="overflow-y: scroll ; height:400px ">
+        
+          <div class="form-group">
+            <label class="col-md-3 control-label" for="name" style="margin-top:5px;">Event photo:</label>
+		        <div class="col-md-9">
+			        <input type="file" name="imagefile" id="uploadFile" size="100" onchange="pictureChange(this);" />
+		        </div>
+    	     <div style=" margin-left:150px ">
+    	       <br/><br/>
+    		     <img id="event_picture" src="UserProfilePictures/groupdefault.png" class="img-rounded" alt="Cinque Terre"width="300" height="236"/>
+           </div>
+          </div>
+           
+           <div class="form-group" >
+              <label class="col-md-3" for="name" style="margin-top:7px;">Event name:</label>
+		          <div class="col-md-9">
+			           <input type="text" name="Event_Name" id="eventname" required/>
+		          </div>
+		          <div class="clearfix"></div>
+	         </div>
+	  		
+
+	         <div class="form-group">
+              <label class="col-md-3" for="name">Location:</label>
+		          <div class="col-md-9">
+			           <input type="text" name="Event_Location" id="eventlocation" />
+		          </div>
+		          <div class="clearfix"></div>
+	         </div>
+
+	         <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Description:</label>
+		          <div class="col-md-9">
+			           <textarea cols="40" rows="5" name="Event_desc" id="eventdescription">  </textarea>
+		          </div>
+		          <div class="clearfix"></div>
+	         </div>
+
+      	  <div class="form-group">
+              <label class="col-md-3 control-label" for="name" >Start Date:</label>
+      		    <div class="col-md-9">
+      			       <input type="text" name="start_date" id="eventstartdate"  style="width:120px" required/>
+                   &nbsp;&nbsp;<b>Time: </b><input type="text" name="start_time" id="eventstarttime" style="width:120px" required/> e.g 17:30
+      		    </div>  
+      		    <div class="clearfix"></div>
+				  </div>
+
+
+          <div class="form-group">
+              <label class="col-md-3 control-label" for="name" >End Date:</label>
+              <div class="col-md-9" >
+                   <input type="text" name="end_date" id="eventenddate" style="width:120px"/>
+                   &nbsp;&nbsp; <b>Time: </b> <input type="text" name="eventendtime" id="eventendtime" style="width:120px" /> e.g 17:30
+              </div>  
+              <div class="clearfix"></div>
+          </div>
+					
+	     
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary"  id="btn1"  >Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+     </form>
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- Last Column -->
+
+    <div class="col-md-2" style=" margin-left:750px ;position:absolute">
+        <div style="padding-top:68px; width:285px; margin-left:0px ;position:absolute">
+       
+             <!-- <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h6><b><font color="gray" face="arial">BIRTHDAYS THIS WEEK</font></b><a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See All</a></h6></div>
+                <div class="panel-body">
+                   <div class="panel-body" style="height:150px;">
+                    
+                </div> </div>
+            </div> -->
+        </div>
+         <div style="padding-top:320px; width:285px; margin-left:0px ;position:absolute">
+        <!-- <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h6><b><font color="gray" face="arial">EVENTS HAPPENING THIS WEEK</font></b><a href="">&nbsp;&nbsp;See More</a></h6></div>
+                <div class="panel-body">
+                   <div class="panel-body" style="height:250px;">
+                    
+                </div> </div>
+            </div> -->
+        </div>
+        <!-- <div style="padding-top:680px; width:285px; margin-left:0px ;position:absolute">
+        	<div class="well" style="padding-top:0px;background: white;">
+            	
+            	<p><br/><font size="2" color="gray">You can add your events to Microsoft Outlook, Google Calendar or Apple Calendar. Once you add them, they'll stay updated.</font></p>
+            	<a href=""><h6>Upcoming Events</h6></a>
+            	<a href=""><h6>Birthdays</h6></a>
+        	</div>
+    	</div> -->
+       
+        <div style="padding-top:880px; width:285px; margin-left:0px ;position:absolute"><font color="gray" size="2"></font></div> </div>
+    </div>
+
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:95px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+
+
+    </div>
+   
+</body>
+
+</html>

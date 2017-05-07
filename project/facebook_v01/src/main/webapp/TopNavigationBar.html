@@ -1,0 +1,70 @@
+<nav class="navbar-xs navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="HomePage.html"><i class="fa fa-facebook-official" style="font-size:28px;color:white;position:relative;top:9px;left:110px" ></i></a>
+      	</div>
+        <form class="navbar-form navbar-left"  style="position:relative;top:1.5px;left:110px;">
+        	<div class="input-group">
+          	<input type="text" class="form-control" id="search" placeholder="Search Friends" style="height:26px;width:410px;">
+            	<div class="input-group-btn">
+              	<button class="btn btn-default" id="searchbutton" style="height:26px;width:50px;" type="button" onclick="storeSearchValue()" >
+                	<i class="glyphicon glyphicon-search" style="position:relative;top:-1px;"></i>
+              	</button>
+            	</div>
+        	</div>
+        </form>
+        <ul class="nav navbar-nav navbar-right" style="position:relative;right:150px">
+          <li>
+            <button class="btn btn-primary btn-sm navbar-btn" onclick="window.location='TimeLine.html'">
+           
+              	<span class="user-avatar pull-left" style="margin-right:12px; margin-top:-1.5px;">
+              		<img src="UserProfilePictures/default.jpg" class="img-responsive img-rounded" title="Default" width="20px" height="22px" id="topNavBarProPic">
+            		</span>
+                <span class="user-name" style="color:white;margin-right:12px; margin-top:-3px;">
+                Default
+            		</span>
+           	</button>
+          </li>
+          <li>
+            <button class="btn btn-primary btn-sm navbar-btn" onclick="window.location='HomePage.html'">Home</button>
+          </li>
+          <li>
+            <button class="btn btn-primary btn-sm navbar-btn" onclick="window.location='FriendRequests.html'">Find Friends</button>
+          </li>
+          <li><a href="TimeLine.html"><span class="glyphicon glyphicon-user" style="color:#1C283F"></span></a></li>
+          <li><a href="Messanger.html"><span class="glyphicon glyphicon-phone" style="color:#1C283F"></span></a></li>
+          <!-- <li><a href="MiscellaneousPages/ScopeForTest2.html"><span class="glyphicon glyphicon-globe" style="color:#1C283F"></span></a></li>
+          <li><a href="MiscellaneousPages/ScopeForTest2.html"><span class="glyphicon glyphicon-lock" style="color:#1C283F"></span><span class="badge">2</span></a></li> -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="glyphicon glyphicon-triangle-bottom" style="color:#1C283F"></a>
+              <ul class="dropdown-menu">
+	           		<!-- <li><a href="MiscellaneousPages/OutOfScope.html">Create Page</a></li> -->
+	          		<!-- <li class="divider"></li> -->
+	          		<li><a href="GroupList.html">Create Group</a></li>
+	          		<li><a href="GroupList.html">Your Groups</a></li>
+	          		<!-- <li class="divider"></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">Create Adverts</a></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">Advertising on Facebook</a></li> -->
+	          		<li class="divider"></li>
+	          		<!-- <li><a href="MiscellaneousPages/OutOfScope.html">Activity Log</a></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">News Feed Preferences</a></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">Settings</a></li> -->
+	          		<li><a href="index.html" onclick="logoutfunction();">Log out</a></li>
+	          		<!-- <li class="divider"></li> -->
+	          		<!-- <li><a href="MiscellaneousPages/OutOfScope.html">Help</a></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">Support Inbox</a></li>
+	          		<li><a href="MiscellaneousPages/OutOfScope.html">Report a Problem</a></li> -->
+              </ul>
+          </li>
+          <li>
+	          <input type="hidden" name="topNavHiddenPK" id="topNavHiddenPK">
+	          <input type="hidden" name="topNavHiddenUsername" id="topNavHiddenUsername">
+	          <input type="hidden" name="topNavHiddenFirstname" id="topNavHiddenFirstname">
+	          <input type="hidden" name="topNavHiddenLastname" id="topNavHiddenLastname">
+	          <input type="hidden" name="topNavHiddenProfilePicURL" id="topNavHiddenProfilePicURL">
+	          <input type="hidden" name="topNavHiddenCoverPicURL" id="topNavHiddenCoverPicURL">
+          </li>
+		  	</ul>
+			</div>
+		</nav>

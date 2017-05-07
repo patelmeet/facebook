@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE = edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>TimeLineFriend</title>
+
+	<script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css">
+	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+	<script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+   	<link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="CSSFiles/TimeLine.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+    <script src="JavaScriptFiles/TimeLineFriend.js"></script>
+    <script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+	
+	<div id="topNavigationBar"></div>
+
+	<!--Code For Central Part Starts Here-->
+	<div class="container-fluid">
+		<div class="col-md-8 col-md-offset-1" style="margin-left: 150px">
+			<div class="row">
+				<div id="centreContent"
+					style="padding-top: 50px; position: absolute">
+					<div class="fb-profile">
+						
+						<img align="left" class="fb-image-lg fill" id="coverpic"
+							src="UserProfilePictures/black.png" alt="Cover image example" />
+						
+						<a href="#picturemodal" id="create_event" data-toggle="modal">
+							<img align="left" class="profile-photo" id="profilePic"
+							src="UserProfilePictures/default.jpg" alt="Profile image example" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default" style="margin-top: 350px;">
+				<div class="panel-footer">
+					<h3 style="color: black" id="nameFooter"></h3>
+				</div>
+			</div>
+			
+			<div class="col-md-12 panel panel-default" style="margin-top: -2em;">
+				<div id="exTab1" class="panel-header">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#timeline" data-toggle="tab">Timeline</a>
+						</li>
+						<li><a href="#about" data-toggle="tab">About</a></li>
+						<li><a href="#friends" data-toggle="tab">Friends</a></li>
+					</ul>
+
+					<div class="tab-content clearfix">
+						<div class="tab-pane active" id="timeline">
+							<div class="row" >
+							        <div style="padding-top :-2em;width:100%;position:absolute">
+							          <div class="well well-sm" style="padding-top:25px;background: white;" >
+							            <form class="form-horizontal" role="form">
+							              <h3>What's New</h3>
+							              	<div class="form-group" style="padding:14px;">
+							                          	<textarea id="whatsOnYourMind" class="form-control" placeholder="What's on your mind?"></textarea>
+							                      </div>
+							
+							                      <div class="col-md-9 col-md-offset-3 text-center">
+							                        <div class="row">
+							
+							                        <div class="dropdown">
+							                          <button class="btn btn-default btn-sm btn-beside dropdown-toggle" type="button" data-toggle="dropdown">Friends
+							                          <span class="caret"></span></button>
+							                          <ul class="dropdown-menu">
+							                            <li><a href="#">Who should see this?</a></li>
+							                            <li><a href="#"><i class="glyphicon glyphicon-globe"></i>&nbsp;Public</a></li>
+							                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;Friends</a></li>
+							                            <li class="divider"></li>
+							                            <li><a href="#">About Us</a></li>
+							                          </ul>
+							                        </div>
+							
+							                          <button class="btn btn-primary" style="float:right"type="button" onclick="addPostStatus()">Post</button>
+							
+							                          </div>
+							                        </div>
+							
+							                      <ul class="list-inline">
+							                          <li><a href="#"><i class="glyphicon glyphicon-upload"></i></a></li>
+							                          <li><a href="#"><i class="fa fa-smile-o" ></i></a></li>
+							                          <li><a href="#"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+							                      </ul>
+							                  </form>
+							              </div>
+							              <div id="mytimelineposts"></div>
+							        </div>
+							    </div>
+						</div>
+						<div class="tab-pane" id="about"></div>
+						<div class="tab-pane" id="friends"></div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- Second Main Column Ends Here-->
+
+
+
+	<!-- Last Column -->
+
+	<!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+ <!-- End of chatbox for friend list -->
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+header {
+    background-color: #3b5998;
+  }
+body{
+    background-color: #d8dfea;
+}
+.btn-secondary:hover, .btn-primary:active, .btn-primary:focus{
+  color:white;
+    background-color:#2E4576;
+    border-color:#2E4576;
+    box-shadow: none;
+  }
+
+.btn-primary{
+    background-color:#3b5998;
+    border-color:#3b5998;
+    padding-top:3px !important;
+    padding-bottom:3px !important;
+  }
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color:#2E4576;
+    border-color:#2E4576;
+    box-shadow: none;
+  }
+/*
+*
+*
+Following Style is included for navigation bar on the top. It's Color and hover events are maintained by this.
+*
+*
+*/
+.navbar-nav > li > a {
+    padding-top:12px !important;
+    padding-bottom:12px !important;}
+.navbar {
+    min-height:46px !important
+ }
+/* navbar */
+.navbar-default {
+    background-color: #3b5998;
+    border-color: #E7E7E7;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: #365899;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #365899;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #365899;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #365899;
+    border-bottom-color: #365899;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #365899;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/* Styles for navigation bar ends here.*/
+
+
+
+
+
+/* Style for Time Line Content */
+
+h3{
+  font-weight: bold;
+  color: grey;
+}
+aboutTitle{
+  font-weight: bold;
+  color: grey;
+  font-size: 15px;
+}
+
+
+.tabs-left { margin-top: 0rem; padding-top: 0px}
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+
+.nav-pills > li > a{
+  color:grey;
+}
+
+.nav-pills > li > a:hover {
+    background-color: white;
+    color:black;
+}
+
+.nav-pills > li.active > a:hover {
+    background-color: white;
+    color:black;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus  {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/*Style for Timeline Content Ends Here*/
+
+
+/*Profile Picture Style*/
+
+.fb-profile img.fb-image-lg{
+    z-index: 0;
+    width: 890px;
+    height:300px;
+}
+
+    .profile-photo {
+    width: 180px;
+    height: 180px;
+    box-shadow: 2px #000;
+    display: block;
+    right:-20px;
+    top: -160px;
+    cursor: pointer;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    position: relative;
+    }
+
+
+
+
+.thumbnail {
+  
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+}
+
+/*=======================Rachana==================================*/
+
+.timeline-nav{
+	background: #fff !important;
+	margin-top:-2em;	
+	border-bottom: 1px solid #eee;
+}
+
+.timeline-nav .nav{
+	
+}
+
+/*=======================End Rachana==================================*/
+
+

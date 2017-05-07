@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css">
+    <title>Discover Groups</title>
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css">
+	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+	 <script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+	 
+   	<link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="CSSFiles/GroupCSS.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+   	<script src="JavaScriptFiles/GroupDiscoverScript.js"> </script>
+   	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+   	
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+	
+	 <div id="topNavigationBar"></div>
+  
+  
+  <!-- Second nav Starts here-->
+	
+<div class="nitishaffix">
+
+    <div style="padding-top:20px;width:800px;position:relative;">
+
+      <ul class="list-group" id="row1">
+        <ul class="nav nav-pills list-group-item" style="height:75px";>
+
+          <li style="margin-left:120px;padding-top:18px;font-size: 120%;"><a href="GroupList.html">Groups</a></li>
+          
+          <li><a href="GroupDiscover.html" style="padding-top:28px; font-size: 120%">Discover</a></li>
+          
+          <button data-toggle="modal"  data-target="#myModal"class="btn btn-success floatright" style="margin-top:20px; margin-right:10px">+ Create Group</button>
+			
+       </ul>
+      </ul>
+    </div>
+
+  </div>
+	
+<!-- Second nav Ends here-->
+
+
+
+<!-- Create Group Modal Starts Here -->
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+
+      <!-- Modal header-->
+        <div class="modal-header" style="background-color: #e6e6e6">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Create New Group</h4>
+        </div>
+
+        <!-- Modal body-->
+        <div class="modal-body">
+            <div class="panel panel-default">
+                <div class="panel-body" style="color: #999"><img class="pull-left img-thumbnail" src="images/side.jpg"/>Groups are great for getting things done and staying in touch with just the people you want. Share photos and videos, have conversations, make plans and more.</div>
+            </div>
+           <form>
+              <div class="form-group">
+              <label>Name your group</label>
+              <input type="text" class="form-control" name="group_Name" id="group_Name" required>
+              </div>
+          </form>
+
+          <form>
+              <div class="form-group">
+              <label>Add some people</label>
+              <input type="text" class="form-control" name="group_People" id="group_People" placeholder="Enter names or email addresses..." required>
+              </div>
+          </form>
+
+          <form>
+            <div class="form-group">
+                <label>Select privacy</label>
+
+                  <div class="col-sm-12">
+
+                    <select class="form-control " name="group_Privacy" id="group_Privacy" style="width: 350px;" required>
+                        
+                        <option value="1" data-icon="glyphicon-picture" hidden selected>Closed Group</option>
+                        
+                        <option value="0" data-icon="glyphicon-lock text-primary">Public Group</option>
+                        <option value="1">Closed Group</option>
+                        <option value="2">Secret Group</option>
+
+                      </select>
+                  </div>
+             </div>
+           </form>
+
+       </div>
+      <br>
+       <!-- Modal footer-->
+        <div class="modal-footer">
+           <div class="pull-left">
+            <label>
+              <input type="checkbox"> Pin to shortcuts
+            </label>
+           </div>
+          <button id = "grpcreate" onclick="createGroupFunction()" value="CreateGroup" type="button" class="btn btn-primary" data-dismiss="modal" >Create</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!-- Create Group Modal Ends Here -->
+
+
+
+<!-- panel starts   For Discover Group-->
+
+<div style="position:relative;margin-left: 90px;padding-top :20px;">
+
+<!-- position:relative; -->
+
+		
+		<div class="panel panel-default" style="margin-top :20px;position:relative;width:800px; margin-left: 10px;">
+		
+		<div class="container-fluid">
+		
+		 
+        
+        <div class="col-md-6">
+            <div style="margin-top :25px;width:350px; margin-left: 34px;position:relative;">
+
+              <ul class="list-group" id="grouplist1">
+              </ul>
+              
+            </div>
+        </div> 
+        
+        <div class="col-md-6">
+            <div style="margin-top :25px;width:350px;position:relative;">
+
+              <ul class="list-group" id="grouplist2">
+              </ul>
+              
+            </div>
+        </div> 
+        
+	</div>
+        
+      </div>
+	
+     
+ </div>    
+<!-- panel For Discover Groups ends-->     
+
+<!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+ <!-- End of chatbox for friend list -->
+
+</body>
+
+</html>
+
+
+<!-- http://bootsnipp.com/snippets/56ExR -->

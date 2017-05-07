@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- line no 306 to 317 are changed on 14 march by shachi -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    
+    <title>HomePage</title>
+    
+    
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css">
+	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+	<script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+   	<link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+  	<script src="JavaScriptFiles/HomePageScript.js"></script>
+  	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+  	
+  	<!-- For Hover -->
+
+  	
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+
+
+  <div id="topNavigationBar"></div>
+
+<!--Code For Left Panel Starts From Here-->
+  <div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-2 col-md-offset-1">
+       	<div style="padding-top :66px; width:180px; top:0px; position:fixed" >
+
+       		<div class="box" id="news" style="margin-top: 1px; margin-bottom:9px" >
+        		<div>
+	              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;">
+	              	<img id="ViewPersonalInfoUserProPic" src="UserProfilePictures/default.jpg" class="img-rounded" width="20px" height="20px">
+	              </span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2" id="ViewPersonalInfoUserFullNameFontTag">Default</font>
+        		</div>
+    			</div>
+
+
+          <div class="box" id="news" style="background: #f6f7f9" onclick="window.location='HomePage.html'">
+            <div>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="News Feed">
+                <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/newsFeed.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+              </a>
+            </div>
+           	<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px">
+              <strong><font size="2">News Feed</font></strong>
+            </div>
+            <div>
+                <a href="#"><span class="glyphicon glyphicon-option-horizontal pull-right " style="color:#1C283F;padding-right:5px;padding-top:2px;"></span></a>
+            </div>
+    			</div>
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='Messanger.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:1px;"><img src="icons/messenger_2.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Messenger</font>
+        		</div>
+    			</div>
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='Events.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/Calendar.jpg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Events</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='GroupList.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px; margin-top:-1.5px;"><img src="icons/groups.ico" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Groups</font>
+        		</div>
+    			</div>
+
+
+
+    			<!-- <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/pages.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Pages</font>
+        		</div>
+    			</div>
+ -->
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='FriendRequests.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px; margin-left:5px; margin-top:5px;"><img src="icons/findFriends.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Find Friends</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='FriendList.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:4px;"><img src="icons/findFriends.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Friend Lists</font>
+        		</div>
+    			</div>
+
+
+
+    			<!-- <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/ScopeForTest2.html'">
+        		<div>
+            	<span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/photos.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Photos</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/poke.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Pokes</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:0px;"><img src="icons/onThisDay.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">On This Day</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfSCope.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/joystick.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Games</font>
+        		</div>
+    			</div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+        		<div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:4px; margin-top:-1px;width:15px"><img src="icons/location.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+            	<font size="2">Suggest Edits</font>
+        		</div>
+    			</div>
+
+
+
+          <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/offers.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Offers</font>
+            </div>
+          </div>
+
+
+
+          <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:2px;"><img src="icons/pagesFeed.gif" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Pages Feed</font>
+            </div>
+          </div>
+
+
+
+          <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/joystick.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Games Feed</font>
+            </div>
+          </div>
+          
+
+
+          <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/saved.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Saved</font>
+            </div>
+          </div>
+
+
+
+          <div class="box" id="news" style="margin-top: 1px;" onclick="window.location='MiscellaneousPages/OutOfScope.html'">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;"><img src="icons/shopping.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Shops</font>
+            </div>
+          </div> -->
+
+
+    </div>
+    </div>
+<!-- Left Panel Ends here-->
+
+
+
+
+
+    <!-- Second Main Column (News Feed)-->
+    <div class="col-md-4">
+      <div class="row" >
+        <div style="padding-top :65px;width:500px; margin-left: -20px;position:absolute">
+          <div class="well well-sm" style="padding-top:25px;background: white;" >
+            <form class="form-horizontal" role="form" id="postForm">
+              <h3 >What's New</h3>
+              	<div class="form-group" style="padding:14px;">
+                          	<textarea id="whatsOnYourMind" class="form-control" placeholder="What's on your mind?"></textarea>
+                </div>
+                
+                <div class="form-group" style="padding:14px;">
+					<div id="postedPhoto"></div>
+				</div>		
+                      <div class="col-md-9 col-md-offset-3 text-center">
+                        <div class="row" style="margin-left:200px">
+						
+<!---------------------------------------- 2-Apr to add photo to post ----------------------------------------------------------->
+						<div>
+							<a href="#uploadPhotoModal" id="uploadPhoto"
+								class="btn btn-primary pull-left" data-toggle="modal">Upload photo</a>
+						</div>
+						
+						
+						
+						<!-- Testing Modal -->
+
+						<div id="uploadPhotoModal" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"
+											aria-hidden="true">×</button>
+										<h4 class="modal-title">Upload photo</h4>
+									</div>
+									<div class="modal-body" style="overflow-y: scroll; ">
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="name">Post
+												photo:</label>
+											<div class="col-md-9">
+												<input type="file" name="imagefile" id="uploadFile" size="100"
+													onchange="postPicture(this)" />
+											</div>
+											<div style="margin-left: 150px">
+												<br /> <br /> <img id="post_picture" class="img-rounded"
+													width="300" height="236" />
+											</div>
+										</div>										
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" id="pictureSubmitButton" class="btn btn-primary" onclick="uploadPostPhoto()">Upload</button>
+									</div>
+								</div>
+								<!-- /.modal-content -->
+							</div>
+							<!-- /.modal-dialog -->
+						</div>
+						<!-- /.modal -->
+						<!-- Modal Ends Here -->
+<!----------------------------------------End 2-Apr to add photo to post ----------------------------------------------------------->
+						
+						<table style="">
+							<tr>
+						    <td><div class="dropdown">
+                          <button class="btn btn-default btn-sm btn-beside dropdown-toggle" type="button" data-toggle="dropdown">Friends
+                          <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Who should see this?</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-globe"></i>&nbsp;Public</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;Friends</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">About Us</a></li>
+                          </ul>
+                        </div></td>
+						    <td><button class="btn btn-primary" style="float:right;"type="button" onclick="addPostStatus()">Post</button></td>
+						  </tr>
+						 </table>
+						
+						
+                        
+                          
+                          </div>
+                        </div>
+
+                      <ul class="list-inline">
+                          <li><a href="#"><i class="glyphicon glyphicon-upload"></i></a></li>
+                          <li><a href="#"><i class="fa fa-smile-o" ></i></a></li>
+                          <li><a href="#"><i class="glyphicon glyphicon-map-marker"></i></a></li>
+                      </ul>
+                  </form>
+              </div>              <div id="newsFeed" ></div>
+        </div>
+    </div>
+   </div>
+
+  <!-- Second Main Column Ends Here-->
+
+<!-- Last Column -->
+
+    <div class="col-md-2">
+        <div style="padding-top:65px; width:250px; margin-left:35px ;position:absolute">
+        <div class="well" style="padding-top:0px;  margin-left:35px ;background: white;">
+            <h3><strong>Sports</strong></h3>
+            <div id="external_service">Sports info not available</div>
+        </div>
+        </div>
+    </div>
+    
+<!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+<!-- End of chatbox for friend list -->
+
+    </div>
+    </div>
+</body>
+
+</html>

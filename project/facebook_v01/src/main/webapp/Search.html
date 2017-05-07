@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Search</title>
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+ <link rel="stylesheet" href="RequiredOfflineFiles/bootstrap.min.css">
+    <script src="RequiredOfflineFiles/jquery.min.js"></script>
+    <script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+  	<script src="JavaScriptFiles/SearchScript.js"></script>
+  	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+  	
+</head>
+
+<body onload="topNavBarOnLoadFunction();">
+	
+
+  <div id="topNavigationBar"></div>
+                    
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div style="padding-top :65px;width:750px; margin-left: 50px;position:relative">
+
+                          <ul class="list-group">
+                              <li class="list-group-item">
+                              	<br/>
+                                <h4>People</h4>
+                                <ul id="peopleSearch" style="padding-top :25px;width:740px; margin-left: -40px;position:relative"></ul>
+                              </li>
+                      
+                           </ul>
+
+                            
+                        </div>
+                      </div> 
+                    </div>            
+                
+
+<!-- Last Column -->
+    <div class="col-md-2">
+        <!-- <div style="padding-top:65px; width:250px; margin-left:-70px ;position:relative">
+        <div class="well" style="padding-top:0px;background: white;">
+            <h3><strong>Add personal Contact</strong></h3>
+            <p>Facebook (FB) is an American for-profit corporation and online social media and social networking service based in Menlo Park, California. The Facebook website was launched on February 4, 2004, by Mark Zuckerberg, along with fellow Harvard College students. </p>
+        </div>
+        <div class="well" style="padding-top:0px;background: white;">
+            <h3><strong>Search</strong></h3>
+            <h1>Page Under construction </h1>
+        </div>
+        </div> -->
+    </div>
+   
+ <!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+ <!-- End of chatbox for friend list -->
+
+</body>
+
+</html>
+
+
+<!-- http://bootsnipp.com/snippets/56ExR -->

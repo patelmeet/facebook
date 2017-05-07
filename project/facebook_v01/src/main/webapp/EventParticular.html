@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>EventDetails</title>
+     <script src="RequiredOfflineFiles/jquery.js"></script> 
+ 	<link rel="stylesheet" type="text/css" href="RequiredOfflineFiles/bootstrap.min.css"> 	
+ 	<script src="RequiredOfflineFiles/jquery.min.js"></script>
+ 	<script src="RequiredOfflineFiles/jquery-1.9.1.js"></script>
+    <script src="RequiredOfflineFiles/bootstrap.min.js"></script>    
+    
+    
+    <link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css">     
+     <link rel="stylesheet" href="CSSFiles/HomePage.css" />
+    
+    <link rel="stylesheet" href="RequiredOfflineFiles/jquery-ui.css" />
+    
+    
+    <script src="RequiredOfflineFiles/jquery-ui.js"></script>  
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+    <script src="JavaScriptFiles/EventScript.js"></script> 
+	<script src="JavaScriptFiles/EventFriendList.js"></script>
+	 <script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+</head>
+
+<body	onload="topNavBarOnLoadFunction();">
+    
+  <div id="topNavigationBar"></div>
+
+<!--Code For Left Panel Starts From Here-->
+  <div class="container-fluid">
+    <div class="row">
+    	<div class="col-md-2 col-md-offset-1">
+       	<div style="padding-top :68px; width:180px; top:0px; position:fixed" >
+
+ 		<div class="box" id="news" style="margin-top: 1px; margin-bottom:9px" >
+        		<div>
+	              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1.5px;">
+	              	<img id="ViewPersonalInfoUserProPic" src="UserProfilePictures/default.jpg" class="img-rounded" width="20px" height="20px">
+	              </span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2" id="ViewPersonalInfoUserFullNameFontTag">Default</font>
+        		</div>
+    			</div>
+
+
+		
+
+
+    			<!-- <div class="box" id="news" style="margin-top: -3px; width:150px; height:30px;">
+            <div>
+              <span class="media-middle pull-left" style="margin-left:5px;margin-right:5px; margin-top:-1px;"><img src="icons/Calendar.jpg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+            </div>
+            <div class="pull-left" style="color:#1C283F;position:relative;padding-left:-  1px;padding-top:0px;">
+              <font size="2">Upcoming</font>
+            </div>
+          </div>
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px;">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/calendar1.jpeg" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Calendar</font>
+        		</div>
+    			</div>
+
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px; ">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/discover.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Discover</font>
+        		</div>
+    			</div>
+
+
+
+
+    			<div class="box" id="news" style="margin-top: 3px; width:150px; height:30px;">
+        		<div>
+              <span class="media-middle pull-left" style="margin-right:5px;margin-left:5px;margin-top:2px;"><img src="icons/clock.png" class="img-responsive img-rounded" width="20px" height="10px"></span>
+        		</div>
+        		<div class="pull-left" style="color:#1C283F;position:relative;padding-left:-1px;padding-top:0px;">
+            	<font size="2">Past</font>
+        		</div>
+    			</div>
+ -->
+
+	
+
+    </div>
+  </div>
+<!-- Left Panel Ends here-->
+
+
+
+<!-- Second Main Column -->
+<div class="col-md-4">
+  <div class="row">
+        
+	 <div style="padding-top :68px;width:500px; margin-left: 0px;position:absolute">
+      <div class="panel panel-default" style="background-color:white">
+              <div class="panel-body">
+                   <ul class="list-group" id="eventTitle" style="padding-top :25px;width:450px; margin-left:10px ; margin-top: 10px;position:relative"></ul>
+               </div>
+              <div class="panel-body">
+                <div id="description">
+                   
+                    <button class="btn btn-primary pull-right" data-target="#invitemodal" onclick="doMyOtherOnloadStuff();" data-toggle="modal" style="color:white; margin-top:-10px; height:25px; width:80px;"> 
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        <b>Invite</b>
+                      
+                    </button>
+              </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+	      <div class="panel-heading"><h3 style="text-align:center"><strong>Updates and Summary</strong></h3></div>
+	    </div>
+	    
+	    
+	    
+		<div class="well well-sm" style="background: white;" >
+            <form class="form-horizontal" role="form" id="postForm">
+              <h3 >What's New?</h3>
+              	<div class="form-group" style="padding:14px;">
+						<textarea id="whatsOnYourMind" class="form-control" placeholder="Post something or write event's summary..."></textarea>
+                </div>		
+                      <div class="col-md-9 col-md-offset-3 text-center">
+                        <div class="row" style="margin-left:245px;margin-top:-25px">
+						<table style="">
+							<tr>
+						    	<td><button class="btn btn-primary" style="float:right;width:100px"type="button" onclick="addUpdatePost()">Post</button></td>
+						  	</tr>
+						 </table>
+						 </div>
+                        </div>
+                  </form>
+        </div>  
+	    
+	    <div id="discussion">
+	    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="invitemodal" class="modal fade">
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Invite Friends</h4>
+      </div>
+      <div class="modal-body" style="overflow-y: scroll ; height:400px ">
+      
+      <div class="container-fluid" style="padding-top :35px; margin-left: 10px;">
+	<div class="panel panel-default" style="padding-top :0px;width:500px; margin-left: 10px;position:relative">
+		<div class="panel-heading" style="padding-top :-10px;position:relative"><h3><span class="glyphicon glyphicon-user" style="color:#3b5998;">Friends</span></h3></div>
+			<div class="panel-body">
+			<div class="col-md-10">
+	 		    <div class="col-md-2">                      
+				    <div style="padding-top :15px;width:340px;height:250px; margin-left: 0px;position:relative">
+					<ul class="list-group" id="row1"></ul>
+			  	    </div> 
+	       		    </div>        
+			</div>
+			</div>
+		</div> 
+	</div>
+      </div>   
+       <div class="modal-footer">
+        <button type="button" class="btn btn-primary"  id="btn1" onclick="sendInvite();" >Send Invites</button>
+      </div>
+          
+     
+  </div><!-- /.modal-content -->
+     
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Last Column -->
+       
+   
+        <div style="padding-top:880px; width:285px; margin-left:0px ;position:absolute"><font color="gray" size="2"></font></div> </div>
+   
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:95px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+   
+
+    	
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

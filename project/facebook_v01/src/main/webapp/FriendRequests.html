@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Friend Requests</title>
+    
+    <script src="RequiredOfflineFiles/jquery.js"></script>
+    <link rel="stylesheet" href="RequiredOfflineFiles/bootstrap.min.css">
+    <script src="RequiredOfflineFiles/jquery.min.js"></script>
+    <script src="RequiredOfflineFiles/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="RequiredOfflineFiles/font-awesome.min.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="CSSFiles/HomePage.css" />
+    
+    <script src="JavaScriptFiles/topNavigationBarScript.js"></script>
+  	<script src="JavaScriptFiles/FriendRequestsScript.js"></script>
+  	<script src="JavaScriptFiles/ChatFriendListScript.js"></script>
+  	
+</head>
+
+<body onload="topNavBarOnLoadFunction(); fetchChatFriendList();">
+	
+
+  <div id="topNavigationBar"></div>
+                    
+                    <div class="col-md-8">
+                      <div class="row">
+                        <div style="padding-top :65px;width:750px; margin-left: 50px;position:relative">
+
+                          <ul class="list-group">
+                              <li class="list-group-item">
+                              	<br/>
+                                <h4 id="friendRequestCount">Respond To Your Friend Request</h4>
+                                <ul id="pending_requests" style="padding-top :25px;width:740px; margin-left: -40px;position:relative"></ul>
+                              </li>
+                              <br/><br/>
+                              <li class="list-group-item">
+                              	<br/>
+                                <h4>People You May Know</h4>
+                                <div style="display:none">
+                                	<select class="form-control" name="selectbookname" id="selectbookid" style="width: 140px;" required>
+								 		<option value=All selected>All</option>
+								 		<option value="Book1">Book1</option>
+										<option value="Book2">Book2</option>
+										<option value="Book3">Book3</option>
+										<option value="Book4">Book4</option>
+									</select>
+									<button class="btn btn-primary" onclick="addComponentPeopleYouMayKnow();">Update</button>
+                                </div>
+                                <ul id="peple_you_may_know" style="padding-top :25px;width:740px; margin-left: -40px;position:relative"></ul>
+                              </li>
+                              
+                              <!-- For Suggesting Friends to My Friends - Chetan Sharma - 14/03/2017 -->
+                              
+                              <br/><br/>
+                              
+                              <li class="list-group-item">
+                              	<br/>
+                                <h4>Suggestions By Your Friends</h4>
+                                <ul id="suggestions_by_your_friends" style="padding-top :25px;width:740px; margin-left: -40px;position:relative"></ul>
+                              </li>
+                               <br/><br/>
+                              
+                             <!-- updattion by shachi 17 april --> 
+                               <li class="list-group-item">
+                              	<br/>
+                                <h4 >Search for friends</h4> <hr>
+                                <div id="searchFriends">
+                               
+                                	<label class="col-md-2 control-label">First Name:</label><input type="text" name="firstName" id="firstName" ></input><br><br/>
+                                	<label class="col-md-2 control-label">Last Name:</label><input type="text" name="lastName" id="lastName"></input><br><br/>
+                                	<label class="col-md-2 control-label">Hometown:</label><input type="text" name="homeTown" id="homeTown"></input><br><br/>
+                                	<label class="col-md-2 control-label">Current City:</label><input type="text" name="currentCity" id="currentCity"></input><br><br/>
+                                	<label class="col-md-2 control-label">High School:</label><input type="text" name="school" id="school" ></input><br><br/>
+                                	<label class="col-md-2 control-label">College:</label><input type="text" name="college" id="college" ></input><br><br/>
+                                	<label class="col-md-2 control-label">Employer:</label><input type="text" name="company" id="company" ></input><br><br/>
+                                	<button class="btn btn-primary" type="button" id="searchFriends" onclick="addComponentsearchFriends();" style="margin-left:110px;">Search</button>
+                              		
+                               </div>
+                                <ul id="search_friends" style="padding-top :25px;width:740px; margin-left: -40px;position:relative">
+                                </ul>
+                               
+                                </li>                               
+                               
+                            
+                              
+                      		<!--17 april by shachi Ends Here ----For Suggesting Friends to My Friends - Chetan Sharma - 14/03/2017 -->
+                      
+                           </ul>
+
+                            
+                        </div>
+                      </div> 
+                    </div>  
+                   
+                
+
+      
+
+
+
+
+
+<!-- Last Column -->
+    <div class="col-md-2">
+        <div style="padding-top:65px; width:250px; margin-left:-90px ;position:relative">
+      
+        </div>
+    </div>
+    
+  
+ 
+<!-- chatbox for friend list starts from here -->
+    <div class="col-md-3 pull-right">
+    	<div style="padding-top:65px; width:200px; margin-left:110px ;position:fixed">
+        	<div class="chat-sidebar">
+		   			 <div style="padding-top:45px; width:290px; margin-left:0px ;position:relative">
+		    
+		   				 <div id="friendlist" ></div>
+		   			 </div>		
+        	</div>
+    	</div>
+    </div>
+ <!-- End of chatbox for friend list -->
+      
+
+</body>
+
+</html>
+
